@@ -8,7 +8,12 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+
+      backgroundImage:{
+        circularLight:'repeating-radial-gradient(rgba(0,0,0,0.4) 2px, #ffffff 5px, #ffffff 100px);'
+      }
+    },
     plugins: [],
   }
 }
