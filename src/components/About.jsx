@@ -4,6 +4,7 @@ import Layout from "./Layout";
 import ProfileImage from "./../images/mana5280-bI_Fkt7p0Ks-unsplash.jpg"
 import {  useInView, useMotionValue, useSpring } from "framer-motion";
 import Skills from "./Skills";
+import Experience from "./Experience";
 
 
 
@@ -89,6 +90,7 @@ const About = () => {
                     </div>
                 </Layout>
                 <Skills/>
+                <Experience/>
 
             </main>
 
