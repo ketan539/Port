@@ -5,6 +5,7 @@ import ProfileImage from "./../images/mana5280-bI_Fkt7p0Ks-unsplash.jpg"
 import {  useInView, useMotionValue, useSpring } from "framer-motion";
 import Skills from "./Skills";
 import Experience from "./Experience";
+import Education from "./Education";
 
 
 
@@ -91,6 +92,7 @@ const About = () => {
                 </Layout>
                 <Skills/>
                 <Experience/>
+                <Education/>
 
             </main>
 

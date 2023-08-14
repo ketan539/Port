@@ -27,8 +27,7 @@ const Skills = () => {
             <div className="w-full h-screen relative flex items-center justify-center rounded-full bg-circularLight">
                 <motion.div className="flex items-center cursor-pointer justify-center rounded-full font-semibold bg-black text-white p-8 shadow-black"
                     whileHover={{ scale: 1.1 }}>
-                    Web
-
+                    Web 
                 </motion.div>
                 <Skill name='CSS' x="-5vw" y="-10vw" />
                 <Skill name='HTML' x="-25vw" y="-10vw" />
