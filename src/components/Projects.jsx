@@ -3,6 +3,8 @@ import AnimatedText from "./AnimatedText";
 import Layout from "./Layout";
 import { GithubIcon } from "./Icons";
 import Django_Blog_App from "./../images/Django_Blog_SS.PNG"
+import Weather_App from "./../images/Weather_App.PNG"
+import Django_Ecommerce from "./../images/Django_Ecommerce.PNG"
 
 
 
@@ -74,27 +76,27 @@ const Projects = () => {
                         </div>
                         <div className="col-span-6">
                             <Project
-                                title="Django Blog App"
+                                title="React Weather App"
                                 summary="A simple blog app in Django is a web application that allows users to create, read, update, and delete blog posts. The app usually consists of two main components: 
                                a backend that manages the database and handles user requests, 
                                and a frontend that displays the blog posts to users"
                                 type="Featured Project"
                                 link="/"
-                                github="https://github.com/ketan539/Django_BlogApp"
-                                img={Django_Blog_App} />
+                                github="https://github.com/ketan539/React_WeatherApp"
+                                img={Weather_App} />
                         </div>
                         <div className="col-span-6">
                             <Project
-                                title="Django Blog App"
+                                title="Django Ecommerce App"
                                 summary="A simple blog app in Django is a web application that allows users to create, read, update, and delete blog posts. The app usually consists of two main components: 
                            a backend that manages the database and handles user requests, 
                            and a frontend that displays the blog posts to users"
                                 type="Featured Project"
                                 link="/"
-                                github="https://github.com/ketan539/Django_BlogApp"
-                                img={Django_Blog_App} />
+                                github="https://github.com/ketan539/Django-Ecommerce-App"
+                                img={Django_Ecommerce} />
                         </div>
-                        <div className="col-span-12">
+                        {/* <div className="col-span-12">
                             <FeaturedProject />
                         </div>
                         <div className="col-span-6">
@@ -102,7 +104,7 @@ const Projects = () => {
                         </div>
                         <div className="col-span-6">
                             Project-4
-                        </div>
+                        </div> */}
                     </div>
 
                 </Layout>
