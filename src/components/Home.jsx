@@ -1,3 +1,4 @@
+import { Fragment } from "react";
 import Base from "./Base";
 
 
@@ -5,10 +6,10 @@ const Home = () => {
     return ( 
 
         <>
-         <head>
+         <Fragment>
                 <title>Home Page</title>
                 <meta name="description" content=""></meta>
-            </head>
+            </Fragment>
          <Base/>
          
         </>

@@ -2,7 +2,7 @@ import * as React from "react"
 
 
 
-export const LinkedinIcon = ({className, ...rest}) => (
+export const LinkedinIcon = ({ className, ...rest }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     xmlSpace="preserve"
@@ -26,11 +26,11 @@ export const LinkedinIcon = ({className, ...rest}) => (
   </svg>
 )
 
-export const GithubIcon = ({className, ...rest})  => (
-  <svg xmlns="http://www.w3.org/2000/svg" 
-  width={32}
-  height={32} {...rest}
-  className={`${className}`}>
+export const GithubIcon = ({ className, ...rest }) => (
+  <svg xmlns="http://www.w3.org/2000/svg"
+    width={32}
+    height={32} {...rest}
+    className={`${className}`}>
     <title />
     <path
       d="M16 2a14 14 0 0 0-4.43 27.28c.7.13 1-.3 1-.67v-2.38c-3.89.84-4.71-1.88-4.71-1.88a3.71 3.71 0 0 0-1.62-2.05c-1.27-.86.1-.85.1-.85a2.94 2.94 0 0 1 2.14 1.45 3 3 0 0 0 4.08 1.16 2.93 2.93 0 0 1 .88-1.87c-3.1-.36-6.37-1.56-6.37-6.92a5.4 5.4 0 0 1 1.44-3.76 5 5 0 0 1 .14-3.7s1.17-.38 3.85 1.43a13.3 13.3 0 0 1 7 0c2.67-1.81 3.84-1.43 3.84-1.43a5 5 0 0 1 .14 3.7 5.4 5.4 0 0 1 1.44 3.76c0 5.38-3.27 6.56-6.39 6.91a3.33 3.33 0 0 1 .95 2.59v3.84c0 .46.25.81 1 .67A14 14 0 0 0 16 2Z"
@@ -49,7 +49,7 @@ export const GithubIcon = ({className, ...rest})  => (
 )
 
 
-export const GmailIcon = ({className, ...rest})  => (
+export const GmailIcon = ({ className, ...rest }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width={32}
@@ -83,15 +83,51 @@ export const GmailIcon = ({className, ...rest})  => (
 )
 
 
-export const DownloadIcon = ({className, ...rest}) => (
-  <svg xmlns="http://www.w3.org/2000/svg" 
-  width={32}
-  height={32} 
-  className={`${className}`}
-  {...rest}>
+export const DownloadIcon = ({ className, ...rest }) => (
+  <svg xmlns="http://www.w3.org/2000/svg"
+    width={32}
+    height={32}
+    className={`${className}`}
+    {...rest}>
     <path d="M480 352H346.5l-45.25 45.25C289.2 409.3 273.1 416 256 416s-33.16-6.656-45.25-18.75L165.5 352H32c-17.67 0-32 14.33-32 32v96c0 17.67 14.33 32 32 32h448c17.67 0 32-14.33 32-32v-96c0-17.7-14.3-32-32-32zm-48 104c-13.2 0-24-10.8-24-24s10.8-24 24-24 24 10.8 24 24-10.8 24-24 24zm-198.6-81.4c6.2 6.3 14.4 9.4 22.6 9.4s16.38-3.125 22.62-9.375l128-128c12.49-12.5 12.49-32.75 0-45.25-12.5-12.5-32.76-12.5-45.25 0L288 274.8V32c0-17.67-14.33-32-32-32-17.7 0-32 14.33-32 32v242.8l-73.4-73.4c-12.49-12.5-32.75-12.5-45.25 0-12.49 12.5-12.49 32.75 0 45.25L233.4 374.6z" />
   </svg>
 )
+
+
+export const SunIcon = ({ className, ...rest }) => (
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"
+    width={32}
+    height={32}
+    className={`${className}`}
+    {...rest}
+  >
+    <path
+      fill="#fdda5c"
+      d="M43.93 5.96c-.11-.6-.79-.9-1.31-.58L32 11.94l-9.97-6.79A.841.841 0 0 0 21.5 5c-.39.02-.72.29-.8.67l-2.87 12.15-11.86 2.25c-.6.11-.9.79-.58 1.31L11.95 32l-6.79 9.97c-.34.5-.07 1.2.52 1.34l12.15 2.87 2.25 11.86c.11.6.79.9 1.31.58l10.62-6.56 9.97 6.79c.51.34 1.2.07 1.34-.52l2.87-12.15 11.86-2.25c.6-.11.9-.79.58-1.31L52.07 32l6.79-9.97c.34-.5.07-1.2-.52-1.34l-12.15-2.87-2.25-11.86Z"
+    />
+    <path
+      fill="#fce87b"
+      d="M46.18 17.82 32 11.95l-14.18 5.87L11.95 32l5.87 14.18L32 52.05l14.18-5.87L52.05 32l-5.87-14.18Z"
+    />
+  </svg>
+)
+
+export const MoonIcon = ({ className, ...rest }) => (
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+    width={32}
+    height={32}
+    className={`${className}`}
+    {...rest}>
+    <path fill="none" d="M0 0h24v24H0z" />
+    <path d="M11.38 2.019a7.5 7.5 0 1 0 10.6 10.6C21.662 17.854 17.316 22 12.001 22 6.477 22 2 17.523 2 12c0-5.315 4.146-9.661 9.38-9.981z" />
+  </svg>
+)
+
+
+
+
+
+
 
 
 

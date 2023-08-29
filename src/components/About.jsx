@@ -45,12 +45,12 @@ const About = () => {
                 <title>About Page</title>
                 <meta name="description" content=""></meta>
             </head> */}
-            <main className="flex w-full flex-col items-center justify-center">
+            <main className="flex w-full flex-col items-center dark:bg-black dark:text-white justify-center">
                 <Layout className="pt-16">
                     <AnimatedText text="Passion Fuels Purpose" className="mb-16" />
                     <div className="grid w-full grid-cols-8 gap-16">
                         <div className="col-span-3 flex flex-col items-start justify-start">
-                            <h2 className="mb-4 text-lg font-bold uppercase text-black/75">About me</h2>
+                            <h2 className="mb-4 text-lg font-bold uppercase dark:text-white/75 text-black/75">About me</h2>
                             <p>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil earum illum necessitatibus itaque est libero,
                                 veniam laudantium tempore sint repellendus omnis eum,
@@ -67,7 +67,7 @@ const About = () => {
                                 <span className="inline-block text-7xl font-bold">
                                 <AnimatedNumbers value={50}/>+
                                 </span>
-                                <h2 className="text-xl font-medium capitalize text-black/75">
+                                <h2 className="text-xl font-medium capitalize dark:text-white/75 text-black/75">
                                     Satisfied clients
                                 </h2>
                             </div>
@@ -75,7 +75,7 @@ const About = () => {
                                 <span className="inline-block text-7xl font-bold">
                                 <AnimatedNumbers value={40}/>+
                                 </span>
-                                <h2 className="text-xl font-medium capitalize text-black/75">
+                                <h2 className="text-xl font-medium capitalize dark:text-white/75 text-black/75">
                                     Projects completed
                                 </h2>
                             </div>
@@ -83,7 +83,7 @@ const About = () => {
                                 <span className="inline-block text-7xl font-bold">
                                     1.5
                                 </span>
-                                <h2 className="text-xl font-medium capitalize text-black/75">
+                                <h2 className="text-xl font-medium capitalize dark:text-white/75 text-black/75">
                                     Years of experience
                                 </h2>
                             </div>

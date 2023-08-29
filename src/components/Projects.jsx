@@ -30,11 +30,11 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
     )
 }
 
-const Project = ({ title, type, summary, img, link, github }) => {
+const Project = ({ title, type, img, link, github }) => {
     return (
         <>
             <article className="w-full flex flex-col relative items-center justify-between rounded-2xl border border-solid border-black bg-light shadow-2xl p-6 ">
-
+        
                 <a href={link} target="_blank" rel="noopener noreferrer" className="w-full cursor-pointer overflow-hidden rounded-lg">
                     <img src={img} alt={title} className="w-full h-auto" />
                 </a>
