@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const Footer = () => {
     return (
         <>
-            <footer className="w-full text-white border-t-2 border-solid sm:text-base border-black dark:text-white font-medium text-lg mt-5">
+            <footer className="w-full text-black border-t-2 border-solid sm:text-base border-black dark:text-white font-medium text-lg mt-5">
                 <Layout className="py-8 flex items-center lg:flex-col lg:py-6 justify-between">
                     <span>{new Date().getFullYear()} &copy; All Rights Reserved.</span>
                     <div className="flex items-center">

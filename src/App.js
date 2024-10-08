@@ -6,20 +6,25 @@ import Home from './components/Home';
 import About from './components/About';
 import Projects from './components/Projects';
 import Footer from './components/Footer';
+import { AnimatePresence } from 'framer-motion';
+import { useLocation } from 'react-router-dom';
 
 
 function App() {
+  const location = useLocation();
+
   return (
     <div className="App">
       <>
-
         <NavBar />
-        <Routes>
-          <Route exact path="/" element={<Home />} />
-          <Route exact path="/about" element={<About />} />
-          <Route exact path="/projects" element={<Projects />} />
-        </Routes>     
-        <Footer/>    
+        <AnimatePresence>
+          <Routes location={location} key={location.pathname}>
+            <Route exact path="/" element={<Home />} key="/" />
+            <Route exact path="/about" element={<About />} key="/about" />
+            <Route exact path="/projects" element={<Projects />} key="/projects" />
+          </Routes>
+        </AnimatePresence>
+        <Footer />
       </>
     </div>
   );

@@ -7,7 +7,7 @@ const HireMe = () => {
     return (
 
         <>
-            <div className="fixed left-4 bottom-4 flex items-center justify-center md:right-8 md:absolute md:left-auto md:top-1 md:bottom-auto">
+            <div className="fixed left-4 bottom-4 flex items-center justify-center md:right-8 md:absolute sm:right-0 md:left-auto md:top-1 md:bottom-auto">
                 <div className="w-48 md:w-24 h-auto  flex items-center justify-center relative">
                     <HireMeIcon className={'fill-black animate-spin-slow dark:fill-white z-20'} />
 
