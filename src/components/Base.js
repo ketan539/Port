@@ -12,7 +12,7 @@ const Base = () => {
         <>
             {/* <TransitionEffect /> */}
             
-            <main className='w-full flex items-center justify-between text-black dark:text-white'>
+            <main className='w-[100%] flex items-center justify-between text-black dark:text-white'>
                 <Layout className="pt-0 md:p-16 sm:pt-8">
                     <div className='flex items-center justify-between w-full lg:flex-col'>
                         <div className='w-1/2 md:w-full md:mt-4'>
