@@ -1,20 +1,40 @@
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import Logo from "./Logo";
-import { GithubIcon, GmailIcon, LinkedinIcon, SunIcon } from "./Icons";
+import { GithubIcon, GmailIcon, LinkedinIcon } from "./Icons";
 import { motion } from "framer-motion"
 import useThemeSwitcher from "../hooks/useThemeSwitcher";
-import Moon from "./../images/3859138_cloud_forecast_moon_reflection_weather_icon.png"
-import { useState } from "react";
+import { useState, useRef, useEffect, useCallback } from "react";
 
 const NavBar = () => {
     const location = useLocation();
     const [mode, setMode] = useThemeSwitcher();
 
     const [isOpen, setIsOpen] = useState(false);
+    const navRef = useRef(null);
 
-    const handleClick = () => {
+    const handleClick = useCallback(() => {
         setIsOpen(!isOpen)
-    }
+
+    }, [isOpen]);
+
+
+
+    const handleClickOutside = useCallback((event) => {
+        // If the click is outside the nav element, invoke handleClick
+        if (navRef.current && !navRef.current.contains(event.target)) {
+          handleClick();
+        }
+      }, [handleClick]); // Include handleClick as a dependency
+    
+      useEffect(() => {
+        // Add event listener to detect clicks outside
+        document.addEventListener('mousedown', handleClickOutside);
+    
+        // Clean up the event listener on unmount
+        return () => {
+          document.removeEventListener('mousedown', handleClickOutside);
+        };
+      }, [handleClickOutside]); // Include handleClickOutside as a dependency
 
 
     const CustomLink = ({ to, title, className }) => {
@@ -63,6 +83,7 @@ const NavBar = () => {
                     </nav>
 
                     <nav className="flex items-center justify-center flex-wrap">
+
                         <motion.a className="w-6 mx-3" href="/" target="_blank"
                             whileHover={{ y: -3 }}
                             whileTap={{ scale: 0.9 }}
@@ -78,28 +99,16 @@ const NavBar = () => {
                             whileTap={{ scale: 0.9 }}
                         ><GmailIcon /></motion.a>
 
-                        <button
-                            onClick={() => setMode(mode === 'light' ? 'dark' : 'light')}
-                            className="ml-3 flex items-end justify-center rounded-full p-1">
+                        <span className='bg-[#d4d4d8] dark:bg-white h-[1px] w-8 rotate-90 ml-2'></span>
 
-                            {mode === ' light ' ?
-                                (
-                                    <img src={Moon} alt='moon' className={'fill-black'} />
-                                )
-                                :
-                                (
-                                    <SunIcon className={'fill-black'} />
-                                )
-
-                            }
-
-                        </button>
+                        <input onClick={() => setMode(mode === 'light' ? 'dark' : 'light')} className="toggle" type="checkbox" />
 
                     </nav>
                 </div>
 
                 {isOpen ?
                     <motion.div
+                        ref={navRef}
                         initial={{ scale: 0, opacity: 0, x: "-50%", y: "-50%" }}
                         animate={{ scale: 1, opacity: 1 }}
                         className="min-w-[70vw] flex flex-col transition-all ease-out bg-black/80 dark:bg-white/75 rounded-lg backdrop-blur-md py-32 justify-between items-center 
@@ -122,28 +131,20 @@ const NavBar = () => {
                                 whileTap={{ scale: 0.9 }}
                             ><GithubIcon className='bg-white rounded-full' /></motion.a>
 
-                            <motion.a className="w-6 mx-3 sm:mx-2" href="/" target="_blank"
+                            <motion.a className="w-6 mx-2 sm:mx-2" href="/" target="_blank"
                                 whileHover={{ y: -3 }}
                                 whileTap={{ scale: 0.9 }}
                             ><GmailIcon /></motion.a>
 
-                            <button
-                                onClick={() => setMode(mode === 'light' ? 'dark' : 'light')}
-                                className="ml-3 flex items-end justify-center rounded-full p-1">
+                            <span className='bg-[#d4d4d8] dark:bg-white h-[1px] w-8 rotate-90 ml-1'></span>
 
-                                {mode === ' light ' ?
-                                    (
-                                        <img src={Moon} alt='moon' className={'fill-black'} />
-                                    )
-                                    :
-                                    (
-                                        <SunIcon className={'fill-black'} />
-                                    )
+                            <input onClick={() => setMode(mode === 'light' ? 'dark' : 'light')} className="toggle ml-2" type="checkbox" />
 
-                                }
+                        </nav>
 
-                            </button>
-
+                        <nav className="flex items-center justify-center mt-10 cursor-pointer" onClick={handleClick}>
+                            <span className='bg-white dark:bg-black block h-0.5 w-8 rounded-sm absolute transform rotate-45'></span>
+                            <span className='bg-white dark:bg-black block h-0.5 w-8 rounded-sm absolute transform -rotate-45'></span>
                         </nav>
                     </motion.div>
                     : null}

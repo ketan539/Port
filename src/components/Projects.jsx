@@ -6,7 +6,7 @@ import { GithubIcon } from "./Icons";
 import Django_Blog_App from "./../images/Django_Blog_SS.PNG"
 import Weather_App from "./../images/Weather_App.PNG"
 import Django_Ecommerce from "./../images/Django_Ecommerce.PNG"
-import TransitionEffect from "./TransitionEffect";
+//import TransitionEffect from "./TransitionEffect";
 
 
 
@@ -68,7 +68,7 @@ const Projects = () => {
     return (
 
         <>
-             <TransitionEffect/>
+             {/* <TransitionEffect/> */}
             <main className="w-full mb-16 flex flex-col items-center  dark:text-white justify-center">
                 <Layout className='pt-16'>
                     <AnimatedText text='Imagination Trumps Knowledge!'

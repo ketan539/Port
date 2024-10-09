@@ -3,14 +3,15 @@ import MainImage from "./../images/Leonardo_Anime_XL_Type_of_Image_Digital_illus
 import Layout from "./Layout";
 import AnimatedText from "./AnimatedText";
 import HireMe from "./HireMe";
-import TransitionEffect from "./TransitionEffect";
+//import TransitionEffect from "./TransitionEffect";
 //import { Link } from "react-router-dom";
 
 const Base = () => {
     return (
 
         <>
-            <TransitionEffect />
+            {/* <TransitionEffect /> */}
+            
             <main className='w-full flex items-center justify-between text-black dark:text-white'>
                 <Layout className="pt-0 md:p-16 sm:pt-8">
                     <div className='flex items-center justify-between w-full lg:flex-col'>
