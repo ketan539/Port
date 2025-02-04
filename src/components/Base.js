@@ -8,7 +8,6 @@ import HireMe from "./HireMe";
 
 const Base = () => {
     return (
-
         <>
             {/* <TransitionEffect /> */}
             
@@ -18,32 +17,28 @@ const Base = () => {
                         <div className='w-1/2 md:w-full md:mt-4'>
                             <img src={MainImage} alt='base_image'
                                 className='w-full h-auto lg:hidden md:inline-block md:w-full'
-
                             />
                         </div>
                         <div className="w-1/2 flex flex-col md:mt-4 items-center self-center lg:w-full lg:text-center">
-                            <AnimatedText text='Web developer high on caffeine.' className="!text-6xl !text-left ml-5
+                            <AnimatedText text='Adding Brainpower to Your Web Design.' className="!text-6xl !text-left ml-5
                             xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl
                             " />
-                            <p className="my-4 ml-5 text-base md:text-sm sm:text-xs font-medium">Passionate web developer who loves making cool looking and scalable web applications. Having expertise in React.js and Django framework. Explore my articles and projects to see my work.</p>
+                            <p className="my-4 ml-5 text-base md:text-sm sm:text-xs font-medium">I'm a Full Stack Developer with 2 years of experience working with Python Django, Flask framework and React.js, Next.js. I focus on creating scalable web applications with smooth user experiences and efficient back-end systems. I enjoy solving problems, building clean and maintainable code, and collaborating with teams to deliver high-quality projects on time.</p>
                             <div className="flex items-center self-start mt-2 ml-5 lg:self-center">
-                                <a href='/dummy.jpg' target="_blank"
+                                <a href={process.env.PUBLIC_URL + '/Ketan_Nagpure_CV.pdf'} download="Ketan_Nagpure_CV.pdf"
                                     className="flex items-center
                                     md:p-2 md:px-4 md:text-base
                                     bg-black text-white px-6 p-2.5 rounded-lg text-lg  font-semibold hover:bg-light hover:text-black hover:bg-white dark:text-black dark:bg-white dark:hover:bg-blue-800 dark:hover:text-white border-2 border-solid border-transparent hover:border-dark ">
-                                    Resume</a>
+                                    Download CV</a>
                                 <a href="mailto:ketann539@gmail.com" target="_blank" rel="noreferrer"
                                     className="ml-5 md:text-base font-medium text-lg capitalize text-dark underline">
                                     Contact</a>
-
                             </div>
                         </div>
                     </div>
                 </Layout>
                 <HireMe />
             </main>
-
-
         </>
     );
 }

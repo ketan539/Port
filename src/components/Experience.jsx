@@ -34,7 +34,7 @@ const Experience = () => {
     return (
 
         <>
-            <div className='my-64'>
+            <div className='my-36'>
                 <h2 className="font-bold text-8xl text-center mb-32 w-full md:text-6xl xs:text-4xl md:mb-16">
                     Experience
                 </h2>
@@ -46,19 +46,9 @@ const Experience = () => {
                         <Details position="Jr. Software Engineer" company="Unilactic Enterprise"
                             time="January 2023 - Present" address="Mumbai."
                             companyLink="https://www.linkedin.com/in/ketan-nagpure-7a763a214/"
-                            work="Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil earum illum necessitatibus itaque est libero,
-                            veniam laudantium tempore sint repellendus omnis eum,
-                            iusto porro cupiditate maxime harum suscipit illo nostrum?"/>
+                            work="Developed an end-to-end e-commerce platform, implementing features like user authentication, product management, and order processing. Focused on building scalable back-end using Python Django, Django REST framework (DRF) and RESTful API integrations to enable smooth client-server communication."/>
                     </ul>
-                    <ul className="w-full flex flex-col items-start justify-between ml-4 my-3">
-                        <Details position="Jr. Software Engineer" company="Unilactic Enterprise"
-                            time="January 2023 - Present" address="Mumbai."
-                            companyLink="https://www.linkedin.com/in/ketan-nagpure-7a763a214/"
-                            work="Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil earum illum necessitatibus itaque est libero,
-                            veniam laudantium tempore sint repellendus omnis eum,
-                            iusto porro cupiditate maxime harum suscipit illo nostrum?"/>
-                    </ul>
-
+                
                 </div>
             </div>
 

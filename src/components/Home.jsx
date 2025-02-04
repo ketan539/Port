@@ -7,7 +7,7 @@ const Home = () => {
 
         <>
          <Fragment>
-                <title>Home Page</title>
+                <title>Home</title>
                 <meta name="description" content=""></meta>
             </Fragment>
          <Base/>

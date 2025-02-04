@@ -34,7 +34,7 @@ const Education = () => {
     return (
 
         <>
-            <div className='mt-34 mb-40'>
+            <div className='mt-26 mb-40'>
                 <h2 className="font-bold text-8xl text-center mb-32 w-full md:text-6xl xs:text-4xl md:mb-16">
                     Education
                 </h2>
@@ -47,10 +47,10 @@ const Education = () => {
                             type="PG in Python Full Stack Web-Development"
                             time="Feb 2022 - Nov 2022"
                             place="IT Vedant Institute, Mumbai"
-                            info='Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil earum illum necessitatibus itaque est libero,
-                            veniam laudantium tempore sint repellendus omnis eum,
-                            iusto porro cupiditate maxime harum suscipit illo nostrum?'
-
+                            info={`Certification of Python for Web Development by IBM Developer Skills Network.
+Certification of Python Programming by IT Vedant Institute.
+Certification of Web Designing by IT Vedant Institute.
+`}
                         />
                     </ul>
                     <ul className="w-full flex flex-col items-start justify-between ml-4 my-3">
@@ -58,9 +58,11 @@ const Education = () => {
                             type="Bachelors of Engineering"
                             time="Sep 2018 -  Jun 2021"
                             place="Mumbai University, Mumbai"
-                            info='Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil earum illum necessitatibus itaque est libero,
-                            veniam laudantium tempore sint repellendus omnis eum,
-                            iusto porro cupiditate maxime harum suscipit illo nostrum?'
+                            info={`Completed Bachelors of Engineering with First class distinction.
+                                Participated in various technical events and workshops.
+                                 .`
+                                
+                            }
 
                         />
                     </ul>
